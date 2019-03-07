@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="d47979b5-baa4-4708-a2e1-9d58f118fb70" activeEnvironment="Default" name="REST Project 2" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.actions.iface.tools.soapui.TestRunnerAction@values-local"><![CDATA[<xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  <con:entry key="Report Format(s)" value=""/>
+  <con:entry key="Host:Port" value=""/>
+  <con:entry key="Export JUnit Results" value="false"/>
+  <con:entry key="Export All" value="false"/>
+  <con:entry key="Save After" value="false"/>
+  <con:entry key="Add Settings" value="false"/>
+  <con:entry key="WSS Password Type" value=""/>
+  <con:entry key="TestSuite" value="TestSuite 1"/>
+  <con:entry key="Endpoint" value=""/>
+  <con:entry key="Select Report Type" value=""/>
+  <con:entry key="System Properties" value=""/>
+  <con:entry key="Password" value=""/>
+  <con:entry key="Print Report" value="true"/>
+  <con:entry key="Open Report" value="false"/>
+  <con:entry key="Export JUnit Results with test properties" value="false"/>
+  <con:entry key="Global Properties" value=""/>
+  <con:entry key="Project Properties" value=""/>
+  <con:entry key="Project Password" value=""/>
+  <con:entry key="TestCase" value="&lt;all>"/>
+  <con:entry key="Username" value=""/>
+  <con:entry key="user-settings.xml Password" value=""/>
+  <con:entry key="TestRunner Path" value=""/>
+  <con:entry key="Environment" value="Default"/>
+  <con:entry key="Coverage Report" value="false"/>
+  <con:entry key="Enable UI" value="false"/>
+  <con:entry key="Root Folder" value=""/>
+  <con:entry key="Ignore Errors" value="false"/>
+  <con:entry key="Domain" value=""/>
+  <con:entry key="Tool Args" value=""/>
+  <con:entry key="Save Project" value="false"/>
+</xml-fragment>]]></con:setting></con:settings><con:interface xsi:type="con:RestService" id="bbe516c0-202f-4590-b4ee-7c579190633b" wadlVersion="http://wadl.dev.java.net/2009/02" name="http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart=""/><con:endpoints><con:endpoint>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com</con:endpoint></con:endpoints><con:resource name="CreateOrg" path="/orgManagement/1.0/createOrg" id="e3d2fe8a-7ba2-411d-b5ea-82a48592d48c"><con:settings/><con:parameters/><con:method name="CreateOrg 1" id="15f962e6-791c-408a-ac32-63eeaa61adf6" method="POST"><con:settings/><con:parameters/><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType>application/json;charset=UTF-8</con:mediaType><con:status>200</con:status><con:params/><con:element xmlns:cre="http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com/orgManagement/1.0/createOrg">cre:Response</con:element></con:representation><con:request name="Request 1" id="a9113933-101a-42e5-8e56-10c96ceecabc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="lang" value="EN"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com</con:endpoint><con:request>{
+	"name" : "t-3",
+	"quotaDefinition":"   "
+
+}</con:request><con:originalUri>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com/orgManagement/1.0/createOrg</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method><con:method name="CreateOrg 2" id="06dba649-9a86-41ad-a328-f8aa953dc27e" method="POST"><con:settings/><con:parameters/><con:request name="Request 1" id="f737ac0b-091a-4378-9a13-1865b0219e4f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="lang" value="EN"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com</con:endpoint><con:request>{
+	"name" : "t-4",
+	"quotaDefinition":"   "
+
+}</con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:request></con:method></con:resource></con:interface><con:testSuite id="4bd988e0-ebc3-48f3-a001-28016ec8decf" name="TestSuite 1"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="9e7ccf5c-afd1-4768-b0ce-1e97e71efed1" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 1" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateOrg 1 - Request 1" id="26f39ab8-2b60-4656-ba22-30fe1dd0c9b2"><con:settings/><con:config service="http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com" resourcePath="/orgManagement/1.0/createOrg" methodName="CreateOrg 1" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateOrg 1 - Request 1" id="a9113933-101a-42e5-8e56-10c96ceecabc" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="lang" value="EN"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com</con:endpoint><con:request>{
+	"name" : "t-7",
+	"quotaDefinition":"   "
+
+}</con:request><con:originalUri>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com/orgManagement/1.0/createOrg</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:testCase id="6f6f9b33-b174-42c0-9c3e-124e1ee13137" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="TestCase 2" searchProperties="true"><con:settings/><con:testStep type="restrequest" name="CreateOrg 2 - Request 1" id="e17071e4-07e3-4f43-9539-f34b11bbe932"><con:settings/><con:config service="http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com" resourcePath="/orgManagement/1.0/createOrg" methodName="CreateOrg 2" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="CreateOrg 2 - Request 1" id="f737ac0b-091a-4378-9a13-1865b0219e4f" mediaType="application/json" postQueryString="false"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment xmlns:con="http://eviware.com/soapui/config">
+  &lt;con:entry key="lang" value="EN"/>
+  &lt;con:entry key="Content-Type" value="application/json"/>
+&lt;/xml-fragment></con:setting></con:settings><con:endpoint>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com</con:endpoint><con:request>{
+	"name" : "t-8",
+	"quotaDefinition":"   "
+
+}</con:request><con:originalUri>http://proxyapiapp.apps.eu.cfdev.canopy-cloud.com/orgManagement/1.0/createOrg</con:originalUri><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/></con:restRequest></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>
